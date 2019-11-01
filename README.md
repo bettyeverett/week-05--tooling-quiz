@@ -110,7 +110,7 @@ in order to 'throw away' the last commit, but keep the files as they are at this
 
 ## 8. Ignore it all!
 
-![Quiz image 8.png]( "Quiz question 8 image")
+![Quiz image 8.png](resources/08.png "Quiz question 8 image")
 
 To tell git to ignore all files except hello.html, you would create a .gitignore file in the folder...
 
@@ -125,4 +125,19 @@ index.html
 .Thumb_db
 super-secret-config.php
 ```
+
+## 9. Describe the process
+
+The steps to setting up a new piece of work in gitflow would be...
+
+- Setting up a repo on github
+- Creating a local file on your computer using `mkdir project`
+- Running `git init` to initialise git watching that file
+- Create a file in your local folder using `code index.html`
+- Do some work in the file and cmd+s file
+- Check the `git status`
+- Add file with `git add index.html`
+- Commit the file with a message `git commit -m "Creating index.html"
+- Then push the folder with file in from local to github repo using 
+    `git remote add origin git@github.com:develop-me/drupal1.git`
 
