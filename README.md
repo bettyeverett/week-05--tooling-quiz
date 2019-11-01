@@ -141,3 +141,12 @@ The steps to setting up a new piece of work in gitflow would be...
 - Then push the folder with file in from local to github repo using 
     `git remote add origin git@github.com:develop-me/drupal1.git`
 
+## 10. npm & gulp
+
+In order to bring in some of our favourite workflow from a previous project, we should use a package manager, npm, to specify the packages that your project will be usuing.
+
+- `npm init` will initialise npm in the terminal and create a package.json file, you should enter through the questionare.
+- `npm install {module name}` will create a node_modules folder and download and install packages into it.
+- Creating a gulpfile.js will allow us to define and pull in dependencies (plugins), declare variables from these plugins and write js functions to define tasks.
+- `gulp minify-css` would then run the minify-css task that we have created.
+
