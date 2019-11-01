@@ -101,3 +101,10 @@ You would need to determine which changes you would like to keep by fixing the c
 In order to 'throw away' all work since last commit, you would run the command...
 
 `git reset HEAD~ --hard`
+
+## 7. (Sort of) Burn it all!
+
+in order to 'throw away' the last commit, but keep the files as they are at this point of you working on them, you would run the command...
+
+`git reset HEAD~ --soft`
+
