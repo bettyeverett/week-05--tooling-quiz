@@ -96,3 +96,8 @@ The above error message has come from trying to push your master to the origin/m
 
 You would need to determine which changes you would like to keep by fixing the conflicts between the two versions of index.html in the local master and repo master. 
 
+## 6. Burn it all!
+
+In order to 'throw away' all work since last commit, you would run the command...
+
+`git reset HEAD~ --hard`
