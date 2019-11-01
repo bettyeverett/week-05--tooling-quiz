@@ -54,3 +54,26 @@ The above message has been returned when trying to push a version to the reposit
 
 The error message is telling us that we can't push to the repository because your version is older than the current version in the repository and therefor you would overwrite and lose work in the repo. You would need to pull the current repo first to merge with your local work before pushing and updating the repo.
 
+## 4. Reading Git Messages: Oh Noes #2
+
+```bash
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 53 (delta 26), reused 31 (delta 22), pack-reused 15
+Unpacking objects: 100% (53/53), done.
+From github.com:develop-me/git-simple
+   6f630d7..7176d81  master            -> origin/master
+ * [new branch]      addteampagetonews -> origin/addteampagetonews
+   1760f80..bacdb99  projectname       -> origin/projectname
+Updating 6f630d7..7176d81
+error: Your local changes to the following files would be overwritten by merge:
+	index.html
+Please commit your changes or stash them before you merge.
+Aborting
+```
+
+The above error message has returned from trying to run the merge command.
+
+You have made changes to the local version of index.html, which would then be overwritten if terminal allowed you to run this command. You would need to commit all current changes to index.html before running the merge command again.
+
