@@ -150,3 +150,9 @@ In order to bring in some of our favourite workflow from a previous project, we 
 - Creating a gulpfile.js will allow us to define and pull in dependencies (plugins), declare variables from these plugins and write js functions to define tasks.
 - `gulp minify-css` would then run the minify-css task that we have created.
 
+## 11. Git, npm & gulp
+
+![Quiz image 11.png](resources/11.png "Quiz question 11 image")
+
+Our new project will need a .gitignore file, to tell git to ignore `node_modules/`
+
