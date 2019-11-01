@@ -77,3 +77,22 @@ The above error message has returned from trying to run the merge command.
 
 You have made changes to the local version of index.html, which would then be overwritten if terminal allowed you to run this command. You would need to commit all current changes to index.html before running the merge command again.
 
+## 5. Reading Git Messages: Oh Noes #3
+
+```bash
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From github.com:develop-me/git-simple
+   a657ab7..d6b1aa1  master     -> origin/master
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+The above error message has come from trying to push your master to the origin/master.
+
+You would need to determine which changes you would like to keep by fixing the conflicts between the two versions of index.html in the local master and repo master. 
+
