@@ -141,7 +141,7 @@ The steps to setting up a new piece of work in gitflow would be...
 - Then push the folder with file in from local to github repo using 
     `git remote add origin git@github.com:develop-me/drupal1.git`
 
-## 10. npm & gulp
+## 10. Npm & gulp
 
 In order to bring in some of our favourite workflow from a previous project, we should use a package manager, npm, to specify the packages that your project will be usuing.
 
@@ -155,4 +155,14 @@ In order to bring in some of our favourite workflow from a previous project, we 
 ![Quiz image 11.png](resources/11.png "Quiz question 11 image")
 
 Our new project will need a .gitignore file, to tell git to ignore `node_modules/`
+
+## 12. Gulp & git
+
+```bash
+/scss/_headings.scss
+/css/styles.min.css # produced by a gulp task
+about.html
+```
+
+If we were minifying source sass and compliling a styles.min.css file and the above files have conflicts, you should fix conflicts between about.html and /scss/_heading.scss before merging, but you can rm/add /css/styles.min.css and then commit, as this file gets reproduced each time you run the `gulp minify-css` command in terminal.
 
