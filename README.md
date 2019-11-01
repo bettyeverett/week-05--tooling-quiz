@@ -108,3 +108,21 @@ in order to 'throw away' the last commit, but keep the files as they are at this
 
 `git reset HEAD~ --soft`
 
+## 8. Ignore it all!
+
+![Quiz image 8.png]( "Quiz question 8 image")
+
+To tell git to ignore all files except hello.html, you would create a .gitignore file in the folder...
+
+`code .gitignore`
+
+and list the files that you would like git to ignore...
+
+```bash
+.DS_store
+images/
+index.html
+.Thumb_db
+super-secret-config.php
+```
+
